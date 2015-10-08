@@ -1,16 +1,9 @@
 package composite;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import es.upm.miw.pd.composite.expression.solution.Dividir;
-import es.upm.miw.pd.composite.expression.solution.Expresion;
-import es.upm.miw.pd.composite.expression.solution.Multiplicar;
-import es.upm.miw.pd.composite.expression.solution.Numero;
-import es.upm.miw.pd.composite.expression.solution.Restar;
-import es.upm.miw.pd.composite.expression.solution.Sumar;
 
 public class ExpressionTest {
     private Expresion exp1, exp2, exp3, exp4, exp5, exp6;
@@ -55,8 +48,8 @@ public class ExpressionTest {
     public void testCompuesto() {
         assertEquals(1, this.exp6.operar());
     }
-
-    @Test
+    
+   @Test
     public void testToString() {
         assertEquals("((3-((4/2)*3))+4)", this.exp6.toString());
     }
