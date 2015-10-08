@@ -1,14 +1,14 @@
 package state;
 
 public class Conexion {
-    private Estado estado;
+    private ConexionEstado estado;
 
     private Link link;
 
     public Conexion(Link link) {
         assert link != null;
         this.link = link;
-        this.estado = Estado.CERRADO;
+        this.estado = new Cerrado();
     }
 
     public Link getLink() {
@@ -16,31 +16,34 @@ public class Conexion {
     }
 
     public Estado getEstado() {
-        return this.estado;
+        return this.estado.getEstado();
     }
     
-    protected void setEstado(Estado estado) {
+    protected void setEstado(ConexionEstado estado) {
         this.estado = estado;
     }
     
-    public void abrir(Conexion conexion){
-    	conexion.abrir(this);
+    public void abrir(){
+    	estado.abrir(this);
+    }
+    public void parar(){
+    	estado.parar(this);
     }
     
-    public void cerrar(Conexion conexion){
-    	conexion.cerrar(this);
+    public void cerrar(){
+    	estado.cerrar(this);
     }
     
-    public void recibir(int respuesta ,Conexion conexion){
-    	conexion.recibir(respuesta,this);
+    public void recibir(int respuesta){
+    	estado.recibir(respuesta,this);
     }
     
-    public void enviar(String msg, Conexion conexion){
-    	conexion.enviar(msg,this);
+    public void enviar(String msg){
+    	estado.enviar(msg,this);
     }
     
-    public void iniciar(Conexion conexion){
-    	conexion.iniciar(this);
+    public void iniciar(){
+    	estado.iniciar(this);
     }
 
  /*   public void abrir() {
