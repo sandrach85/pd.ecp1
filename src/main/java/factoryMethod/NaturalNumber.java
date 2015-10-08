@@ -1,6 +1,6 @@
 package factoryMethod;
 
-public abstract class NaturalNumber {
+public abstract class NaturalNumber extends LanguageManager{
 
 	protected int value;
 

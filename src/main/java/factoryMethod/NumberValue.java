@@ -1,5 +1,5 @@
 package factoryMethod;
 
-public class NumberValue {
+public abstract class NumberValue {
 
 }

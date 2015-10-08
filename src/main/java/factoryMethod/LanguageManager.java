@@ -9,5 +9,10 @@ public abstract class LanguageManager {
         this.language = language;
     }
     
+    public NaturalNumber getNaturalNumber(){
+    	return language;
+    }
+    
+    public abstract NumberValue createLanguage();
   
 }

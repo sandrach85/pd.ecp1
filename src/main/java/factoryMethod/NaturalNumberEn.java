@@ -17,4 +17,9 @@ public class NaturalNumberEn extends NaturalNumber {
 		}
 	}
 
+	@Override
+	public NumberValue createLanguage() {
+		return new NumberEn();
+	}
+
 }
