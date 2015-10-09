@@ -16,10 +16,4 @@ public class NaturalNumberEs extends NaturalNumber {
 			return "???";
 		}
 	}
-
-	@Override
-	public NumberValue createLanguage() {
-		return new NumberEs();		
-	}
-
 }

@@ -2,7 +2,7 @@ package factoryMethod;
 
 public class NaturalNumberEn extends NaturalNumber {
 
-	private static final String[] textValue = { "cero", "one", "two", "three", "four", "five" };
+	private static final String[] textValue = { "zero", "one", "two", "three", "four", "five" };
 
 	public NaturalNumberEn(int value) {
 		this.setValue(value);
@@ -15,11 +15,6 @@ public class NaturalNumberEn extends NaturalNumber {
 		} else {
 			return "???";
 		}
-	}
-
-	@Override
-	public NumberValue createLanguage() {
-		return new NumberEn();
 	}
 
 }
