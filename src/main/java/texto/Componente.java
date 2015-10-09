@@ -1,10 +1,11 @@
 package texto;
 
 public abstract class Componente {
-	
-	public abstract Componente add(Componente c);
-	public abstract Componente remove(Componente c);
 
-	
+	public abstract void add(Componente c);
+
+	public abstract String dibujar(boolean b);
+
+	public abstract boolean esCompuesto();
 
 }

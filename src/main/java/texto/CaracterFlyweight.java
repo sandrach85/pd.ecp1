@@ -1,15 +1,32 @@
 package texto;
 
-public class CaracterFlyweight extends Componente{
-	private Componente componente;
+public class CaracterFlyweight extends Componente {
+	private char letra;
 
-	@Override
-	public Componente add() {
-		// TODO Auto-generated method stub
-		return null;
+	public CaracterFlyweight(char let) {
+		this.letra = let;
 	}
 
-	public Componente get(char a){
-		return null;
+	public char get() {
+		return letra;
+	}
+
+	@Override
+	public void add(Componente c) {
+
+	}	
+
+	@Override
+	public String dibujar(boolean b) {
+		if (!b) {
+			return Character.toString(Character.toLowerCase(letra));
+		} else {
+			return Character.toString(Character.toUpperCase(letra));
+		}
+	}
+
+	@Override
+	public boolean esCompuesto() {
+		return false;
 	}
 }
