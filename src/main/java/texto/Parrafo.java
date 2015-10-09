@@ -20,9 +20,4 @@ public class Parrafo extends Enunciado {
 		return cadena + "\n";
 	}
 
-	@Override
-	public boolean esCompuesto() {
-		return true;
-	}
-
 }

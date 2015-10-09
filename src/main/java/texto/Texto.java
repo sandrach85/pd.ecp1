@@ -20,8 +20,4 @@ public class Texto extends Enunciado {
 		return cadena + "\n---o---";
 	}
 
-	@Override
-	public boolean esCompuesto() {
-		return true;
-	}
 }
