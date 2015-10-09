@@ -3,7 +3,7 @@ package calculadoraMementable;
 import calculadora.Operacion;
 import upm.jbb.IO;
 
-public class SubtractCommand extends Operacion {
+public class SubtractCommand extends Operacion implements Comando {
 
 	public SubtractCommand(CalculadoraMementable cal) {
 		super(cal);

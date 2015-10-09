@@ -3,7 +3,7 @@ package calculadoraMementable;
 import upm.jbb.IO;
 import calculadora.Operacion;
 
-public class SaveCommand extends Operacion {
+public class SaveCommand extends Operacion implements Comando {
 
 	private GestorMementos<MementoCalculadora> gestorMementos;
 
@@ -20,7 +20,7 @@ public class SaveCommand extends Operacion {
 	@Override
 	public void execute() {
 		String clave = IO.getIO().readString();
-		gestorMementos.addMemento(clave, calculator.createMemento());
+		gestorMementos.addMemento(clave, ((CalculadoraMementable) calculator).createMemento());
 	}
 
 }

@@ -3,7 +3,7 @@ package calculadoraMementable;
 import calculadora.Operacion;
 import upm.jbb.IO;
 
-public class PrintCommand extends Operacion{
+public class PrintCommand extends Operacion implements Comando{
 
 	public PrintCommand(CalculadoraMementable cal) {
 		super(cal);

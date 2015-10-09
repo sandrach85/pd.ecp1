@@ -1,7 +1,7 @@
 package calculadoraMementable;
 
 public class MementoCalculadora {
-	
+
 	private int valor;
 
 	public MementoCalculadora(int valor) {
@@ -12,6 +12,5 @@ public class MementoCalculadora {
 	public int getValor() {
 		return valor;
 	}
-	
-	
+
 }

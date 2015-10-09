@@ -3,7 +3,7 @@ package calculadoraMementable;
 import upm.jbb.IO;
 import calculadora.Operacion;
 
-public class UndoCommand extends Operacion{
+public class UndoCommand extends Operacion implements Comando{
 	
 	private GestorMementos<MementoCalculadora> gestorMementos;
 
@@ -21,7 +21,7 @@ public class UndoCommand extends Operacion{
 	@Override
 	public void execute() {
 		String clave = IO.getIO().readString();
-		calculator.restoreMemento(gestorMementos.getMemento(clave));
+		((CalculadoraMementable) calculator).restoreMemento(gestorMementos.getMemento(clave));
 	}
 
 }
