@@ -17,7 +17,7 @@ public class Texto extends Enunciado {
 		for (int i = 0; i < enunciado.size(); i++) {
 			cadena += enunciado.get(i).dibujar(b);
 		}
-		return cadena + "\n---o---";
+		return cadena + "---o---\n";
 	}
 
 }

@@ -10,7 +10,7 @@ public class CaracterFlyweight extends Componente {
 	public char get() {
 		return letra;
 	}
-
+	
 	@Override
 	public void add(Componente c) {
 
@@ -18,10 +18,10 @@ public class CaracterFlyweight extends Componente {
 
 	@Override
 	public String dibujar(boolean b) {
-		if (!b) {
-			return Character.toString(Character.toLowerCase(letra));
-		} else {
+		if (b) {
 			return Character.toString(Character.toUpperCase(letra));
+		} else {
+			return Character.toString(letra);
 		}
 	}
 

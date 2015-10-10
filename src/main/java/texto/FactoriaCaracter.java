@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class FactoriaCaracter {
 
 	private static FactoriaCaracter factoria = new FactoriaCaracter();
-	private ArrayList<CaracterFlyweight> almacen = new ArrayList<CaracterFlyweight>();
+	private ArrayList<CaracterFlyweight> almacen;
 
 	private FactoriaCaracter() {
-		factoria = null;
+		almacen = new ArrayList<CaracterFlyweight>();
 	}
 
 	public static FactoriaCaracter getFactoria() {
@@ -19,7 +19,9 @@ public class FactoriaCaracter {
 		if (almacen.contains(c)) {
 			return almacen.get(c);
 		} else {
-			return null;
+			CaracterFlyweight caracter = new CaracterFlyweight(c);
+			almacen.add(caracter);
+			return caracter;
 		}
 	}
 
