@@ -29,17 +29,5 @@ public class Triangle implements Figure {
 	@Override
 	public void aceptar(Visitor v) {
 		v.visitTriangle(this);
-
 	}
-
-	/*
-	 * public Triangle(String description, double base, double height) {
-	 * super(description); this.base = base; this.height = height; }
-	 * 
-	 * @Override public double area() { return base * height * 0.5; }
-	 * 
-	 * @Override public double numberOfSides() { return 3; }
-	 * 
-	 * @Override public String toString() { return super.toString(); }
-	 */
 }

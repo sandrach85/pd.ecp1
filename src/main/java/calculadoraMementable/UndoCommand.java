@@ -3,14 +3,14 @@ package calculadoraMementable;
 import upm.jbb.IO;
 import calculadora.Operacion;
 
-public class UndoCommand extends Operacion implements Comando{
-	
+public class UndoCommand extends Operacion implements Comando {
+
 	private GestorMementos<MementoCalculadora> gestorMementos;
 
 	public UndoCommand(CalculadoraMementable cal, GestorMementos<MementoCalculadora> gestorMementos) {
 		super(cal);
 		this.gestorMementos = gestorMementos;
-		
+
 	}
 
 	@Override

@@ -17,7 +17,5 @@ public class SubtractCommand extends Operacion {
 	public void execute() {
 		int i = IO.getIO().readInt();
 		calculator.subtract(i);
-
 	}
-
 }

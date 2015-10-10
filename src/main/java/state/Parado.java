@@ -1,6 +1,6 @@
 package state;
 
-public class Parado  extends ConexionEstado{
+public class Parado extends ConexionEstado {
 
 	public Parado() {
 		super(Estado.PARADO);
@@ -17,12 +17,12 @@ public class Parado  extends ConexionEstado{
 	}
 
 	@Override
-	public void recibir(int respuesta,Conexion conexion) {
+	public void recibir(int respuesta, Conexion conexion) {
 		throw new UnsupportedOperationException("Acción no permitida... ");
 	}
 
 	@Override
-	public void enviar(String msg,Conexion conexion) {
+	public void enviar(String msg, Conexion conexion) {
 		throw new UnsupportedOperationException("Acción no permitida... ");
 	}
 

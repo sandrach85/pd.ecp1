@@ -20,17 +20,5 @@ public class Square implements Figure {
 	@Override
 	public void aceptar(Visitor v) {
 		v.visitSquare(this);
-
 	}
-
-	/*
-	 * public Square(String description, double side) { super(description);
-	 * this.side = side; }
-	 * 
-	 * @Override public double area() { return side * side; }
-	 * 
-	 * @Override public double numberOfSides() { return 4; }
-	 * 
-	 * @Override public String toString() { return super.toString(); }
-	 */
 }

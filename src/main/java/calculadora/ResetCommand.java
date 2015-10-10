@@ -1,6 +1,6 @@
 package calculadora;
 
-public class ResetCommand extends Operacion{
+public class ResetCommand extends Operacion {
 
 	public ResetCommand(Calculator cal) {
 		super(cal);
@@ -15,5 +15,4 @@ public class ResetCommand extends Operacion{
 	public void execute() {
 		calculator.reset();
 	}
-
 }

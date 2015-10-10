@@ -3,10 +3,9 @@ package calculadoraMementable;
 import calculadora.Operacion;
 import upm.jbb.IO;
 
-public class AddCommand extends Operacion implements Comando{
+public class AddCommand extends Operacion implements Comando {
 
-	
-	public AddCommand(CalculadoraMementable cal){
+	public AddCommand(CalculadoraMementable cal) {
 		super(cal);
 	}
 
@@ -17,9 +16,8 @@ public class AddCommand extends Operacion implements Comando{
 
 	@Override
 	public void execute() {
-		int i= IO.getIO().readInt();
+		int i = IO.getIO().readInt();
 		calculator.add(i);
 	}
-
 
 }

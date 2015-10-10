@@ -19,16 +19,5 @@ public class Circle implements Figure {
 	@Override
 	public void aceptar(Visitor v) {
 		v.visitCircle(this);
-
 	}
-
-	/*
-	 * public Circle(String description, double radius) { super(description);
-	 * this.radius = radius; }
-	 * 
-	 * @Override public double area() { return Math.PI * radius * radius; }
-	 * 
-	 * @Override public double numberOfSides() { return
-	 * Double.POSITIVE_INFINITY; }
-	 */
 }

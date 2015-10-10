@@ -1,7 +1,7 @@
 package state;
 
 public class Cerrado extends ConexionEstado {
-	
+
 	public Cerrado() {
 		super(Estado.CERRADO);
 	}

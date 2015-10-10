@@ -2,7 +2,7 @@ package calculadoraMementable;
 
 import calculadora.Operacion;
 
-public class ResetCommand extends Operacion implements Comando{
+public class ResetCommand extends Operacion implements Comando {
 
 	public ResetCommand(CalculadoraMementable cal) {
 		super(cal);

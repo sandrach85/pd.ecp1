@@ -26,5 +26,4 @@ public class Visitor2 extends Visitor {
 	public int getBs() {
 		return contB;
 	}
-
 }
