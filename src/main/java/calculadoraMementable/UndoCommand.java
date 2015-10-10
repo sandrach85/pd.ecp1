@@ -20,7 +20,7 @@ public class UndoCommand extends Operacion implements Comando{
 
 	@Override
 	public void execute() {
-		String clave = IO.getIO().readString();
+		String clave = (String) IO.getIO().select(gestorMementos.keys());
 		((CalculadoraMementable) calculator).restoreMemento(gestorMementos.getMemento(clave));
 	}
 
