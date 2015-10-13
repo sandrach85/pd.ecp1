@@ -9,5 +9,5 @@ public abstract class Operador extends Expresion {
 		this.operando2 = exp2;
 	}
 
-	public abstract String toString();
+	
 }

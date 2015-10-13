@@ -12,4 +12,11 @@ public class Numero extends Expresion {
 		return this.numero;
 	}
 
+	@Override
+	public String toString() {
+		return  Integer.toString(numero);
+	}
+	
+	
+
 }
